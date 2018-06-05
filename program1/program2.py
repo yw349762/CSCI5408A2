@@ -76,17 +76,22 @@ def get_tweets(query):
 ##tweet.strip().encode('ascii', 'ignore')
 
 
-queries = ["#HanSolo"]
-#["#HanSolo", "\"Nova Scotia\"", "@Windows", "#realDonaldTrump", "#Google", "@SaskMorningNews ‏", "@SaskatoonFire", "#yxe", "@nspowerinc‏", "#Canada", "@VisitNovaScotia" ]
+queries = ["#HanSolo", "\"Nova Scotia\"", "@Windows", "#realDonaldTrump", "#Google", "@SaskMorningNews ‏", "@SaskatoonFire", "#yxe", "@nspowerinc‏", "#Canada", "@VisitNovaScotia" ]
 
 with open('tweettext.csv', 'w') as outfile:
     writer = csv.writer(outfile)
-    writer.writerow(["text","Sentiment"])
+    writer.writerow(["text","Sentiment","Score"])
     for query in queries:
         t = get_tweets(query)
         for tweet in t:
             s = SentimentAnalysis(filename='SentiWordNet.txt', weighting='geometric')
             textt = tweet.text
+            if s.score(textt)==0.0:
+                senti="netural"
+            if s.score(textt)<0.0:
+                senti = "negative"
+            if s.score(textt) > 0.0:
+                senti = "positive"
             writer.writerow(
-                [tweet.text.encode('unicode-escape'),s.score(textt)])
+                [tweet.text.encode('unicode-escape'),senti, s.score(textt)])
 
