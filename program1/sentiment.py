@@ -5,19 +5,13 @@ use the geometric method to caculate the weight"""
 import nltk
 import re
 
-import self as self
-
-
 class SentimentAnalysis(object):
-    """Class to get sentiment score based on analyzer."""
-
     def __init__(self, filename='SentiWordNet.txt', weighting='geometric'):
         self.swn_pos = {'a': {}, 'v': {}, 'r': {}, 'n': {}}
         self.swn_all = {}
         self.build_swn(filename, weighting)
 
     def geometric_weighted(self, score_list):
-        """"Get geometric weighted sum of scores."""
         weighted_sum = 0
         num = 1
         for el in score_list:
@@ -57,7 +51,6 @@ class SentimentAnalysis(object):
             self.swn_all[word] = self.geometric_weighted(newlist)
 
     def pos_short(self, pos):
-        """Convert NLTK POS tags to SWN's POS tags."""
         if pos in set(['VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ']):
             return 'v'
         elif pos in set(['JJ', 'JJR', 'JJS']):
@@ -70,7 +63,6 @@ class SentimentAnalysis(object):
             return 'a'
 
     def score_word(self, word, pos):
-        """Get sentiment score of word based on SWN and part of speech."""
         try:
             return self.swn_pos[pos][word]
         except KeyError:
@@ -80,8 +72,6 @@ class SentimentAnalysis(object):
                 return 0
 
     def score(self, sentence):
-        """Sentiment score a sentence."""
-        # init sentiwordnet lookup/scoring tools
         impt = set(['NNS', 'NN', 'NNP', 'NNPS', 'JJ', 'JJR', 'JJS',
                     'RB', 'RBR', 'RBS', 'VB', 'VBD', 'VBG', 'VBN',
                     'VBP', 'VBZ', 'unknown'])
