@@ -38,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="program2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="program2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -49,11 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="program3.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="program3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/program3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state>
+              <folding>
+                <element signature="e#154#164#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,8 +89,8 @@
         <option value="$PROJECT_DIR$/program1.py" />
         <option value="$PROJECT_DIR$/example.csv" />
         <option value="$PROJECT_DIR$/sentiment.py" />
-        <option value="$PROJECT_DIR$/program3.py" />
         <option value="$PROJECT_DIR$/program2.py" />
+        <option value="$PROJECT_DIR$/program3.py" />
       </list>
     </option>
   </component>
@@ -102,8 +104,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="393" />
+    <option name="x" value="100" />
+    <option name="y" value="206" />
     <option name="width" value="1400" />
     <option name="height" value="792" />
   </component>
@@ -268,7 +270,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="393" width="1400" height="792" extended-state="0" />
+    <frame x="100" y="206" width="1400" height="792" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -278,7 +280,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -688,18 +690,20 @@
     <entry file="file://$PROJECT_DIR$/tweettext.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/program3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/program2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
