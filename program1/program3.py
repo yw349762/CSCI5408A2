@@ -1,19 +1,12 @@
 # build_index.py
 FILE_URL = "example.csv"
-ES_HOST = {"host": "localhost", "port": 9200}
+ES_HOST = {"host": "18.219.234.159", "port": 9200}
 INDEX_NAME = 'tweettext'
 TYPE_NAME = '_doc'
 ID_FIELD = 'id'
 
 import csv
 from elasticsearch import Elasticsearch
-
-# 1. Which libraries do I need ?
-import pandas as pd
-import numpy as np
-import pyes # For documentation around pyes.es : https://pyes.readthedocs.org/en/latest/references/pyes.es.html
-import json
-
 
 
 csv_file_object = csv.reader(FILE_URL)

@@ -1,15 +1,7 @@
-from IPython.display import display
 import tweepy
-import time
 import json
 import csv
-import pandas as pd
 
-
-
-#from elasticsearch import Elasticsearch
-
-from tweepy import User
 
 from sentiment import SentimentAnalysis
 
