@@ -8,21 +8,10 @@ class SentimentAnalysis(object):
     """Class to get sentiment score based on analyzer."""
 
     def __init__(self, filename='SentiWordNet.txt', weighting='geometric'):
-        """Initialize with filename and choice of weighting."""
-        if weighting not in ('geometric', 'harmonic', 'average'):
-            raise ValueError(
-                'Allowed weighting options are geometric, harmonic, average')
-        # parse file and build sentiwordnet dicts
         self.swn_pos = {'a': {}, 'v': {}, 'r': {}, 'n': {}}
         self.swn_all = {}
         self.build_swn(filename, weighting)
 
-    def average(self, score_list):
-        """Get arithmetic average of scores."""
-        if (score_list):
-            return sum(score_list) / float(len(score_list))
-        else:
-            return 0
 
     def geometric_weighted(self, score_list):
         """"Get geometric weighted sum of scores."""
@@ -30,16 +19,6 @@ class SentimentAnalysis(object):
         num = 1
         for el in score_list:
             weighted_sum += (el * (1 / float(2 ** num)))
-            num += 1
-        return weighted_sum
-
-    # another possible weighting instead of average
-    def harmonic_weighted(self, score_list):
-        """Get harmonic weighted sum of scores."""
-        weighted_sum = 0
-        num = 2
-        for el in score_list:
-            weighted_sum += (el * (1 / float(num)))
             num += 1
         return weighted_sum
 
