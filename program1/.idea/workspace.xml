@@ -105,9 +105,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="100" />
-    <option name="y" value="206" />
+    <option name="y" value="225" />
     <option name="width" value="1400" />
-    <option name="height" value="792" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -270,11 +270,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="206" width="1400" height="792" extended-state="0" />
+    <frame x="100" y="225" width="1400" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50357145" side_tool="true" visible="true" weight="0.32729805" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50357145" side_tool="true" visible="true" weight="0.33619457" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642858" weight="0.32729805" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
@@ -314,7 +314,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/sentiment.py</url>
-          <line>2</line>
+          <line>4</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />

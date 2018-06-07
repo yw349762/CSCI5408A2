@@ -1,7 +1,11 @@
 
-"""reference： https://github.com/anelachan/sentimentanalysis/blob/master/sentiment.py """
+"""reference： https://github.com/anelachan/sentimentanalysis/blob/master/sentiment.py
+the Algorithm is adatped from the git reop above
+use the geometric method to caculate the weight"""
 import nltk
 import re
+
+import self as self
 
 
 class SentimentAnalysis(object):
@@ -11,7 +15,6 @@ class SentimentAnalysis(object):
         self.swn_pos = {'a': {}, 'v': {}, 'r': {}, 'n': {}}
         self.swn_all = {}
         self.build_swn(filename, weighting)
-
 
     def geometric_weighted(self, score_list):
         """"Get geometric weighted sum of scores."""
@@ -23,7 +26,6 @@ class SentimentAnalysis(object):
         return weighted_sum
 
     def build_swn(self, filename, weighting):
-        """Build class's lookup based on SentiWordNet 3.0."""
         records = [line.split('\t') for line in open(filename)]
         for rec in records:
             # has many words in 1 entry
@@ -47,22 +49,12 @@ class SentimentAnalysis(object):
             for word in self.swn_pos[pos].keys():
                 newlist = [self.swn_pos[pos][word][k] for k in sorted(
                     self.swn_pos[pos][word].keys())]
-                if weighting == 'average':
-                    self.swn_pos[pos][word] = self.average(newlist)
-                if weighting == 'geometric':
-                    self.swn_pos[pos][word] = self.geometric_weighted(newlist)
-                if weighting == 'harmonic':
-                    self.swn_pos[pos][word] = self.harmonic_weighted(newlist)
+                self.swn_pos[pos][word] = self.geometric_weighted(newlist)
 
         for word in self.swn_all.keys():
             newlist = [self.swn_all[word][k] for k in sorted(
                 self.swn_all[word].keys())]
-            if weighting == 'average':
-                self.swn_all[word] = self.average(newlist)
-            if weighting == 'geometric':
-                self.swn_all[word] = self.geometric_weighted(newlist)
-            if weighting == 'harmonic':
-                self.swn_all[word] = self.harmonic_weighted(newlist)
+            self.swn_all[word] = self.geometric_weighted(newlist)
 
     def pos_short(self, pos):
         """Convert NLTK POS tags to SWN's POS tags."""
@@ -158,6 +150,5 @@ class SentimentAnalysis(object):
             return 0
 
     def is_multiword(self, words):
-        """Test if a group of words is a multiword expression."""
+
         joined = '_'.join(words)
-        return joined in self.swn_all
