@@ -4,9 +4,9 @@
     <list default="true" id="b6db3bdf-4dee-46fe-a7f7-0c3923e368d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/program1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/program1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program1/program2.py" beforeDir="false" afterPath="$PROJECT_DIR$/program1/program2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program1/program1.py" beforeDir="false" afterPath="$PROJECT_DIR$/program1/program1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/program1/program3.py" beforeDir="false" afterPath="$PROJECT_DIR$/program1/program3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program1/tweettext.csv" beforeDir="false" afterPath="$PROJECT_DIR$/program1/tweettext.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program1/sentiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/program1/sentiment.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,7 +21,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="program2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="program1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/program1/program1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="program2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program1/program2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="641">
@@ -33,10 +45,10 @@
       <file leaf-file-name="sentiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program1/sentiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+            <state relative-caret-position="15">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
               <folding>
-                <element signature="e#189#200#0" expanded="true" />
+                <element signature="e#82#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +67,11 @@
       <file leaf-file-name="program3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/program1/program3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+              <folding>
+                <element signature="e#154#164#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,8 +92,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/program1/tweettext.csv" />
-        <option value="$PROJECT_DIR$/program1/program3.py" />
         <option value="$PROJECT_DIR$/program1/program2.py" />
+        <option value="$PROJECT_DIR$/program1/sentiment.py" />
+        <option value="$PROJECT_DIR$/program1/program3.py" />
+        <option value="$PROJECT_DIR$/program1/program1.py" />
       </list>
     </option>
   </component>
@@ -230,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1528318937501</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change to program three">
+      <created>1528411727037</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528411727037</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change to program three">
+      <created>1528411831352</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528411831352</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -291,6 +322,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -299,7 +333,7 @@
         <state relative-caret-position="675">
           <caret line="45" column="15" lean-forward="true" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
           <folding>
-            <element signature="e#189#200#0" expanded="true" />
+            <element signature="e#82#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -327,27 +361,40 @@
     <entry file="file://$PROJECT_DIR$/program1/tweettext.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/program1/program3.py">
+    <entry file="file://$PROJECT_DIR$/program1/program2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="641">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/program1/sentiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="15" selection-start-line="45" selection-start-column="15" selection-end-line="45" selection-end-column="15" />
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding>
-            <element signature="e#189#200#0" expanded="true" />
+            <element signature="e#82#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/program1/program2.py">
+    <entry file="file://$PROJECT_DIR$/program1/program3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#154#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/program1/program1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

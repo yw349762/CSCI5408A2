@@ -1,4 +1,4 @@
-# build_index.py
+"""reference https://stackoverflow.com/questions/50619742/read-csv-and-upload-data-to-elasticsearch"""
 FILE_URL = "example.csv"
 ES_HOST = {"host": "18.219.234.159", "port": 9200}
 INDEX_NAME = 'tweettext'

@@ -1,11 +1,5 @@
-"""
-Class to score sentiment of text.
 
-Use domain-independent method of dictionary lookup of sentiment words,
-handling negations and multiword expressions. Based on SentiWordNet 3.0.
-
-"""
-
+"""reference： https://github.com/anelachan/sentimentanalysis/blob/master/sentiment.py """
 import nltk
 import re
 

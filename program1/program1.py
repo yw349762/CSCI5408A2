@@ -1,11 +1,10 @@
+
+"""reference from tut 2"""
+
 import tweepy
-import time
 import json
 import csv
 
-#from elasticsearch import Elasticsearch
-
-from tweepy import User
 
 consumer_key = '2beMDMlo7GP3J1mJsCZu5CJzy'
 consumer_secret = 'gSEL8keHPRwjkIgtD3PWmPnPSE9i4S5uUQhf4ITG4YINvyAPHl'
